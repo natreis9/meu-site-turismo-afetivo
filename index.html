@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Afetivo pelo DF</title>
+    <link rel="stylesheet" href="site.css">
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            font-size: 16px; /* Tamanho de fonte padrão */
+        }
+
+        header, section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Estilos para o modo escuro (definido no JavaScript) */
+        body.dark-mode {
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        header.dark-mode, section.dark-mode {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+        }
+
+        /* Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo do Cabeçalho */
+        .header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .language-switcher ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .language-switcher ul li {
+            margin-left: 10px;
+        }
+
+        /* Estilos de navegação */
+        .section-nav a {
+            margin: 0 10px;
+            color: #333;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Botões de Acessibilidade */
+        .accessibility-buttons {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .accessibility-buttons button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .accessibility-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos de imagens e vídeos */
+        .imagem img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Estilo da seção de contato */
+        #referencias {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #referencias a {
+            color: #007bff;
+        }
+
+        #referencias a:hover {
+            text-decoration: underline;
+        }
+        
+        .video-size {
+            width: 200px; /* Ajuste a largura conforme necessário */
+            height: 100px; /* Ajuste a altura conforme necessário */
+            max-width: 100%; /* Garante que o vídeo não ultrapasse a largura do contêiner */
+            height: auto; /* Mantém a proporção do vídeo */
+        }
+  
+    </style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+    <!-- Botões de Acessibilidade -->
+    <div class="accessibility-buttons">
+        <button onclick="increaseFont()">A+</button>
+        <button onclick="decreaseFont()">A-</button>
+        <button onclick="toggleContrast()">Contraste</button>
+    </div>
+
+    <header class="header">
+        <nav class="language-switcher">
+            <ul>
+                <li><a href="index.html=pt">PT</a></li>
+                <li><a href="enindex.html">EN</a></li>
+                <li><a href="esindex.html">ES</a></li>
+                <li><a href="frindex.html">FR</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="esquerda">
+                Turismo Afetivo<br>
+                pelo DF: O que<br>
+                fazer em<br>
+                Brasília?
+            </div>
+            <div class="direita">
+                <div class="section-nav">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#turismo">Turismo</a>
+                    <a href="#visita-guiada">Visita Guiada</a>
+                    <a href="#referencias">Referências</a>
+                </div>
+                <p class="sub-heading">Venha acompanhar um turismo com memória afetiva no DF.</p>
+                <a href="#main-content" class="cta-button">Ir para o conteúdo</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <h2 style="text-align: center;">Sobre</h2>
+        <section id="sobre" class="sobre">
+            <div>
+                <h2>Olá, eu sou a Natália</h2>
+                <p>Sou moradora de Águas Claras, uma região administrativa de Brasília. Situada a 20 km do centro de Brasília, hoje eu vou te guiar para um outro mundo dentro do quadradinho. Se você estiver de passagem por Brasília e deseja sair um pouco do plano piloto, você está no lugar certo.
+                    Brasília, além de seu famoso Plano Piloto e arquitetura modernista, oferece inúmeras oportunidades de turismo afetivo, cheio de histórias e memórias que tocam o coração de quem visita. Seja explorando regiões administrativas como Águas Claras ou descobrindo os tesouros escondidos nos bares e restaurantes da cidade, prepare-se para vivenciar experiências únicas que só Brasília pode proporcionar.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="natalia.jpg" alt="Imagem de Natália, moradora de Águas Claras">
+            </div>
+        </section>
+
+        <section id="turismo">
+            <h2 style="text-align: center;">Turismo</h2>
+            <div class="brasilia">
+                <div>
+                    <h2>Águas Claras: Um Mergulho na Memória</h2>
+                    <p>Se você deseja explorar além dos tradicionais pontos turísticos de Brasília, Águas Claras é o destino perfeito. A apenas 20 km do centro, esta região administrativa possui seu charme único e oferece uma série de atrações que capturam o cotidiano de seus moradores e visitantes.</p>
+                </div>
+                <div class="imagem">
+                    <img src="brasilia.jpg" alt="Imagem de Brasília">
+                </div>
+            </div>
+
+            <h2>Algumas memórias e lugares - Quiosque do Cabeça</h2>
+            <div class="quiosque">
+                <div class="imagem">
+                    <img src="quiosque-cabeca-1.jpeg" class="imagem-grande" alt="Imagem do Quiosque do Cabeça">
+                    <img src="quiosque-cabeca-2.jpeg" class="imagem-grande" alt="Imagem do Quiosque do Cabeça">
+                </div>
+                <div>
+                    <p>Localizado na Rua 5 Sul em Águas Claras, o Quiosque do Cabeça é um bar tradicional que encanta com sua atmosfera descontraída e acolhedora. Frequentado pelos locais, é o lugar ideal para relaxar após um dia de exploração por Brasília. O destaque fica para suas famosas "jantinhas" - espetinhos de carne, frango, linguiça e queijo, sempre acompanhados de pratos simples, mas deliciosos. Se estiver buscando uma experiência autêntica, este é o lugar para estar!</p>
+                </div>
+            </div>
+
+            <h2>Infinu Comunidade Criativa</h2>
+            <div class="quiosque">
+                <div class="imagem">
+                    <img src="infinu-1.jpeg" class="imagem-grande" alt="Imagem do Infinu Comunidade Criativa">
+                    <img src="infinu-2.jpeg" class="imagem-grande" alt="Imagem do Infinu Comunidade Criativa">
+                </div>
+                <div>
+                    <p>Para os que apreciam uma vibe mais alternativa, o Infinu Comunidade Criativa é a escolha certa. Situado na 506 Sul, o Infinu combina arte, moda, gastronomia e bem-estar em um ambiente colaborativo e inovador. Com eventos culturais, shows e exposições, é o ponto de encontro para quem valoriza a criatividade e o consumo consciente em Brasília. Um espaço multifuncional que celebra a produção local e autoral, perfeito para quem busca algo diferente e único.</p>
+                </div>
+            </div>
+        </section>
+
+        <h2 style="text-align: center;">Visita Guiada</h2>
+        <section id="visita-guiada">
+            <div class="visita">
+                <p>Agora acompanhe a visita guiada acessível de como chegar
+                    nesses dois lugares. Aproveite e não deixe de
+                    conhecer!!</p>
+                    <video width="600" controls>
+                        <source src="copy_F4D892A9-2332-4194-9F4B-A96996B21F6F.mov" type="video/mov">
+                   
+                </video>
+            </div>
+        </section>
+
+        <h2 style="text-align: center;">Referências</h2>
+        <section id="referencias">
+            <div>
+                <a href="#">Link de Referência </a>
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Função para aumentar a fonte
+        function increaseFont() {
+            var currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            document.body.style.fontSize = (currentSize + 2) + 'px';
+        }
+
+        // Função para diminuir a fonte
+        function decreaseFont() {
+            var currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            if (currentSize > 12) { // Limite mínimo para o tamanho da fonte
+                document.body.style.fontSize = (currentSize - 2) + 'px';
+            }
+        }
+
+        // Função para alternar entre o modo claro e escuro
+        function toggleContrast() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelectorAll('header, section').forEach((element) => {
+                element.classList.toggle('dark-mode');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+.section-nav {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 460px;
+    height: 28px;
+    padding: 8px 32px 8px 8px;
+
+    align-items: center;
+
+    margin-right: -60px;
+}
+
+.esquerda {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    font-size: 4em;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-end;
+
+    a {
+        align-self: flex-end;
+    }
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20%;
+    .imagem {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.brasilia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20%;
+    .imagem {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.quiosque {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20%;
+    .imagem {
+        display: flex;
+        width: 100%;
+        gap: 5%;
+    }
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+.percurso {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20%;
+    .imagem {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        gap: 5%;
+    }
+    img {
+        object-fit: contain;
+        height: min-content;
+    }
+    .linha {
+        width: 150px;
+    }
+    .mapa {
+        width: 435px;
+    }
+}
+
+.visita {
+    display: flex;
+    gap: 16%;
+    video {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        width: 60%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #4a4a4a;
+}
+
+.header {
+    background-image: url("landing.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    height: 85vh;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+.sub-heading {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-switcher ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.language-switcher li {
+    margin-left: 10px;
+}
+
+.language-switcher a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-navigation {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation li {
+    margin: 0 15px;
+}
+
+.main-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-navigation a:hover {
+    color: #e0e0e0;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+.imagem-pequena {
+    width: 100px;
+    height: auto;
+}
+
+.imagem-media {
+    width: 200px;
+    height: auto;
+}
+
+.imagem-grande {
+    width: 300px;
+    height: auto;
+}
+
+video {
+  
+.video-container {
+    width: 100%; /* Ajusta o vídeo para a largura do contêiner pai */
+    max-width: 600px; /* Define um tamanho máximo de largura */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+    border: 2px solid #333; /* Adiciona uma borda ao redor do vídeo */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que o vídeo se encaixe bem dentro da borda */
+    background-color: #000; /* Define uma cor de fundo preta */
+}
+
+
+video {
+    width: 100%; /* Faz com que o vídeo ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção do vídeo */
+}
+}
+
+/* Tirar link azul */
+a {
+    text-decoration: none;
+    color: white;
+}
